@@ -1,0 +1,84 @@
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage[big]{layaureo}
+
+\usepackage{fontspec}
+\setmainfont[
+  Path          = fonts/,
+  SmallCapsFont = Fontin-SmallCaps.otf
+]{Fontin.otf}
+
+\usepackage{titlesec, bookmark}
+\setlength{\parindent}{0pt}
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks,breaklinks,urlcolor=black,linkcolor=black}
+
+\begin{document}
+  \thispagestyle{empty}
+
+  \begin{center}
+    \Huge\textsc{Riccardo Nigrelli}
+  \end{center}
+
+  \bigskip
+  \section{Personal Data}
+    \bigskip
+    \begin{tabular}{rl}
+      \textsc{Address:}   & Via Geola 43, 28013 Gattico-Veruno (NO), Italy\\
+      \textsc{Telephone:} & (+39) 3483034041\\
+      \textsc{Email:}     & \href{mailto:riccardo.nigrelli@protonmail.com}{riccardo.nigrelli@protonmail.com}
+    \end{tabular}
+  
+  \bigskip
+  \section{Education}
+    \bigskip
+    \begin{tabular}{rl}
+      \textsc{2018-2022} & Master of Computer Science, \\ & $110/110$ \textsc{\footnotesize{Summa Cum Laude}}, Università degli studi di Milano-Bicocca \\ \\
+      \textsc{2015-2018} & Bachelor of Computer Science, \\ & $110/110$, Università del Piemonte Orientale \\
+    \end{tabular}
+
+  \bigskip
+  \section{Work Experiences}
+    \begin{tabular}{r|p{12cm}}
+      \textsc{2019-present} & Caleffi Hydronic Solutions s.p.a. \\ &
+      \footnotesize{Software developer in the R\&D team of IoT products.} \\ &
+      Principally involved into the development of backend services written in 
+      \verb!TypeScript! and deployed over \verb!AWS EC2!. \\ &
+      Development of desktop application written in \verb!C#! with \verb!.NET!
+      framework for the assembly and packaging production line.
+    \end{tabular}
+
+  \bigskip
+  \section{Freelance Projects}
+  \begin{tabular}{r|p{14cm}}
+    \textsc{2022} & Itec srl \\ & \footnotesize{Implementation of a calculation
+    software for the design of thermowells conforming to the ASME PTC 19.3
+    standards. The UI is written in React, while the calculations are exposed
+    using an API written in \verb!Python! using \verb!Flask! framework. The
+    application is generated using the Electron framework.}\\
+    \multicolumn{2}{c}{}\\
+
+    \textsc{2021} & Itec srl \\ & \footnotesize{Development of a software for
+    the automated design of the dial of a pressure gauge through the use of
+    industrial cameras for Machine Vision. The UI is written in React, while the
+    communication with the camera is in \verb!C++!. The application is generated
+    using the Electron framework.} \\ \multicolumn{2}{c}{}\\
+
+    \textsc{2021} & Trafag Italia srl \\ & \footnotesize{Development of a
+    software to be combined with a calibrator for the realization of a machine
+    that respects the principles of Industry 4.0. The application is written in
+    \verb!C#! with \verb!.NET! framework and the data are stored into a MySQL
+    database.} \\ \multicolumn{2}{c}{}\\
+  \end{tabular}
+
+  \bigskip
+  \section{Skills}
+    \begin{tabular}{rl}
+      \textsc{Computer skills:}& C, Python, NodeJS, TypeScript, HTML, CSS, Javascript, \\
+      \textsc{Lingue:}& Inglese (B2)\normalsize\\
+      \textsc{Soft Skills:}& Problem solving, Team work, Critical thinking\\
+    \end{tabular}
+\end{document}
